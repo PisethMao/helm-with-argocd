@@ -69,7 +69,7 @@ ingress:
         - path: /
           pathType: Prefix
   tls:
-    - secretName: nextjs-data-fetching-tls
+    - secretName: nextjs-data-fetching-tls1
       hosts:
         - nextjs-data-fetching.piseth.dev
 
