@@ -63,8 +63,8 @@ ingress:
   annotations:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
-    cert-manager.io/cluster-issuer: lets-encrypt-prod
-    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    kubernetes.io/ingressClassName: "nginx"
+    cert-manager.io/cluster-issuer: "lets-encrypt-prod"
   hosts:
     - host: nextjs-data-fetching.piseth.dev
       paths:
