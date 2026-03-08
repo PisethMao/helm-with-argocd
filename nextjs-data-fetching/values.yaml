@@ -61,9 +61,6 @@ ingress:
   enabled: true
   className: nginx
   annotations:
-    # kubernetes.io/ingress.class: nginx
-    # kubernetes.io/tls-acme: "true"
-    kubernetes.io/ingressClassName: "nginx"
     cert-manager.io/cluster-issuer: "lets-encrypt-prod"
   hosts:
     - host: nextjs-data-fetching.piseth.dev
